@@ -17,7 +17,7 @@
     npm install --save-dev textlint
     npm install --save-dev textlint-rule-prh
     npm install @textlint-ja/textlint-rule-morpheme-match
-    npm install --save-dev yabuuchi-hiroaki/textlint-rule-ja-official-documents
+    npm install --save-dev SabaNoMisoni1123/textlint-rule-ja-official-documents
 
 - `.textlintrc`に以下を書きこみ
 
@@ -25,11 +25,11 @@
 {
     "rules": {
         "@textlint-ja/morpheme-match": {
-            "dictionaryPathList": ["node_modules/textlint-rule-ja-official-documents/src/dictionary.js"]
+            "dictionaryPathList": ["/path/to/node_modules/textlint-rule-ja-official-documents/src/dictionary.js"]
         },
         "prh": {
           "rulePaths": [
-             "node_modules/textlint-rule-ja-official-documents/dict/prh.yml"
+             "/path/to/node_modules/textlint-rule-ja-official-documents/dict/prh.yml"
           ]
       }
    }
